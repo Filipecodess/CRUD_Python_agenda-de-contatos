@@ -4,27 +4,26 @@ Aqui está o **README.md** em formato Markdown, totalmente organizado, formatado
 
 # 📇 Agenda de Contatos — CRUD em Python + SQLite3 (Arquitetura MVC sem POO)
 
-Este projeto é uma **Agenda de Contatos** desenvolvida em **Python 3**, utilizando **SQLite3**, e organizada no padrão arquitetural **MVC (Model–View–Controller)** — tudo **sem Programação Orientada a Objetos**, seguindo um estilo de código baseado exclusivamente em funções.
-É um projeto educativo, simples e direto, ideal para iniciantes que desejam consolidar os fundamentos de Python e banco de dados.
+Este projeto é uma **Agenda de Contatos** desenvolvida em **Python 3**, utilizando **SQLite3**, e organizada no padrão arquitetural **MVC (Model–View–Controller)**, **sem as técnicas e conceitos mais fundamentais de Programação Orientada a Objetos**, seguindo um estilo de código baseado exclusivamente em funções.
+É um projeto simples e direto do curso de coding da faculdade Senac do Recife
 
 ---
 
 ## 📁 Estrutura do Projeto
 
 ```
-agenda_contatos/
-│── model.py          # Parte responsável pelo banco de dados (CRUD real)
+PYTHON_AGENDA_CONTATOS/
+│── banco_dados.py          # Parte responsável pelo banco de dados (CRUD real), temos a camada MODEL
 │── controller.py     # Lógica intermediária entre o banco e o usuário
 │── main.py           # Menu principal e interação no terminal
 │── agenda_contatos.db   # Gerado automaticamente
-│── README.md         # Documentação
 ```
 
 ---
 
 ## 🧠 Objetivo do Projeto
 
-* Praticar Python com foco em funções (sem POO)
+* Praticar Python com foco em funções (sem "POO")
 * Compreender o fluxo de um CRUD completo
 * Aprender a manipular banco SQLite
 * Entender como funciona uma arquitetura MVC na prática
@@ -51,30 +50,6 @@ agenda_contatos/
   * Linux
   * macOS
 * Editor recomendado: **VS Code**
-
----
-
-## ▶️ Como Executar o Projeto
-
-Clone o repositório:
-
-```sh
-git clone https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git
-```
-
-Acesse a pasta:
-
-```sh
-cd NOME_DO_REPOSITORIO
-```
-
-Execute o sistema:
-
-```sh
-python main.py
-```
-
-O arquivo **agenda_contatos.db** será criado automaticamente ao iniciar o sistema.
 
 ---
 
@@ -117,7 +92,8 @@ O projeto segue o padrão:
 
 * **MODEL** → Conexão com banco de dados e execução das operações SQL
 * **CONTROLLER** → Regras de negócio e validações
-* **MAIN** → Menu e interação com o usuário via terminal
+* **VIEW** → interação do usuário (não foi feito ainda pois deve ter algum tempo de estudo, interações foi feito no terminal [main])
+* * **MAIN** → Menu e interação com o usuário via terminal 
 
 Esse padrão deixa o código mais limpo, modular e fácil de manter.
 
@@ -133,18 +109,6 @@ Esse padrão deixa o código mais limpo, modular e fácil de manter.
 
 ---
 
-## 🎓 Público-alvo
-
-Este projeto é indicado para:
-
-* Iniciantes em Python
-* Quem deseja aprender CRUD com SQLite
-* Pessoas estudando MVC sem POO
-* Projetos acadêmicos e portfólio
-* Quem quer entender lógica de programação aplicada
-
----
-
 ## 🤝 Contribuições
 
 Contribuições são muito bem-vindas!
@@ -152,11 +116,4 @@ Sinta-se à vontade para abrir **Issues** ou enviar **Pull Requests**.
 
 ---
 
-Se quiser, posso também:
-
-✅ Criar uma versão **em inglês**
-✅ Criar **badges** de tecnologia para deixar o README mais bonito
-✅ Gerar um **modelo de commit** para esse projeto
-✅ Criar uma **licença MIT**
-
-É só pedir!
+**Vamos por mais! 📚**
