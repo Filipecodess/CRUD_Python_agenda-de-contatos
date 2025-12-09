@@ -1,5 +1,3 @@
-Aqui está o **README.md** em formato Markdown, totalmente organizado, formatado e pronto para colar no GitHub — mantendo o conteúdo que você trouxe, mas deixando mais elegante, estruturado e profissional.
-
 ---
 
 # 📇 Agenda de Contatos — CRUD em Python + SQLite3 (Arquitetura MVC sem POO)
