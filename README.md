@@ -1,121 +1,162 @@
-Sistema de Agenda de Contatos (CRUD com Python + SQLite3)
+Aqui está o **README.md** em formato Markdown, totalmente organizado, formatado e pronto para colar no GitHub — mantendo o conteúdo que você trouxe, mas deixando mais elegante, estruturado e profissional.
 
-Este projeto é uma agenda de contatos desenvolvida em Python, utilizando o banco de dados SQLite3 e uma arquitetura organizada em MVC sem POO — seguindo um padrão simples, direto e ideal para estudantes em formação.
+---
 
-O sistema permite Cadastrar, Listar, Buscar, Atualizar e Excluir contatos facilmente pelo terminal.
+# 📇 Agenda de Contatos — CRUD em Python + SQLite3 (Arquitetura MVC sem POO)
 
-📌 Funcionalidades
+Este projeto é uma **Agenda de Contatos** desenvolvida em **Python 3**, utilizando **SQLite3**, e organizada no padrão arquitetural **MVC (Model–View–Controller)** — tudo **sem Programação Orientada a Objetos**, seguindo um estilo de código baseado exclusivamente em funções.
+É um projeto educativo, simples e direto, ideal para iniciantes que desejam consolidar os fundamentos de Python e banco de dados.
 
-➕ Adicionar um novo contato
+---
 
-📄 Listar todos os contatos
+## 📁 Estrutura do Projeto
 
-🔍 Buscar contato pelo nome
+```
+agenda_contatos/
+│── model.py          # Parte responsável pelo banco de dados (CRUD real)
+│── controller.py     # Lógica intermediária entre o banco e o usuário
+│── main.py           # Menu principal e interação no terminal
+│── agenda_contatos.db   # Gerado automaticamente
+│── README.md         # Documentação
+```
 
-✏️ Atualizar os dados de um contato existente
+---
 
-🗑️ Excluir um contato pelo ID
+## 🧠 Objetivo do Projeto
 
-💾 Banco de dados SQLite criado automaticamente
+* Praticar Python com foco em funções (sem POO)
+* Compreender o fluxo de um CRUD completo
+* Aprender a manipular banco SQLite
+* Entender como funciona uma arquitetura MVC na prática
+* Criar um sistema simples, funcional e fácil de executar
 
-🔧 Lógica separada em arquivos (MVC simplificado sem POO)
+---
 
-🧱 Arquitetura do Projeto (MVC sem POO)
-Camada	Arquivo	Função
-Model	model.py	Acesso ao banco de dados, criação da tabela e funções CRUD
-Controller	controller.py	Lida com a lógica de controle e fluxo do sistema
-Main/App	main.py ou app.py	Ponto de entrada do sistema, interface via terminal
+## 🛠️ Tecnologias Utilizadas
 
-❗ Não foi utilizada a camada view.py a pedido do usuário.
+* **Python 3.10+**
+* **SQLite3** (nativo do Python)
+* Funções e modularização
+* Terminal / CLI
+* Nenhuma dependência externa necessária
 
-⚙️ Requisitos para executar o sistema
+---
 
-Antes de rodar o sistema, verifique se você possui:
+## 📦 Requisitos para Executar
 
-Python 3.8+
+* Python 3.10 ou superior
+* Sistemas suportados:
 
-Biblioteca padrão sqlite3 (já vem com o Python)
+  * Windows
+  * Linux
+  * macOS
+* Editor recomendado: **VS Code**
 
-Sistema operacional:
+---
 
-Windows, Linux ou macOS
+## ▶️ Como Executar o Projeto
 
-📦 Como instalar e executar o projeto
-1️⃣ Clone o repositório
+Clone o repositório:
+
+```sh
 git clone https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git
+```
 
-2️⃣ Acesse a pasta do projeto
+Acesse a pasta:
+
+```sh
 cd NOME_DO_REPOSITORIO
+```
 
-3️⃣ Execute o sistema
+Execute o sistema:
+
+```sh
 python main.py
+```
 
+O arquivo **agenda_contatos.db** será criado automaticamente ao iniciar o sistema.
 
-ou
+---
 
-python app.py
+## 📚 Funcionalidades do Sistema (CRUD Completo)
 
+### ➕ Criar contato
 
-O arquivo principal depende do nome escolhido no seu projeto.
+Permite cadastrar um novo contato informando:
 
-🗂️ Estrutura de Diretórios
-📁 agenda_contatos/
-│── model.py
-│── controller.py
-│── main.py   (ou app.py)
-│── agenda_contatos.db   (criado automaticamente)
-│── README.md
+* Nome
+* Telefone
+* E-mail
+* Endereço
+* Observações
 
-🗃️ Banco de Dados
+### 📑 Listar contatos
 
-Utiliza SQLite3, que cria automaticamente o arquivo agenda_contatos.db.
+Exibe todos os contatos armazenados no banco SQLite, ordenados por nome.
 
-Estrutura da tabela:
+### 🔍 Buscar por nome
 
-CREATE TABLE contatos (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    nome TEXT NOT NULL,
-    telefone TEXT NOT NULL,
-    email TEXT
-);
+Localiza contatos utilizando parte do nome.
+Exemplo:
 
-▶️ Como usar o sistema
+* “an” → Ana, André, Fernanda…
 
-Ao rodar o programa, aparecerá um menu semelhante a este:
+### 📝 Atualizar contato
 
-===== AGENDA DE CONTATOS =====
-1. Adicionar contato
-2. Listar contatos
-3. Buscar contato por nome
-4. Editar contato
-5. Excluir contato
-0. Sair
+Permite modificar qualquer informação de um contato existente.
 
+### 🗑️ Excluir contato
 
-Basta escolher a opção desejada digitando o número correspondente.
+Remove contatos definitivamente do banco de dados.
 
-🧪 Testes manuais recomendados
+---
 
-Criar um contato e verificar se aparece na listagem.
+## 🧩 Arquitetura MVC Utilizada
 
-Buscar um nome inexistente e observar o retorno.
+O projeto segue o padrão:
 
-Atualizar um contato e checar as modificações.
+* **MODEL** → Conexão com banco de dados e execução das operações SQL
+* **CONTROLLER** → Regras de negócio e validações
+* **MAIN** → Menu e interação com o usuário via terminal
 
-Excluir um contato e confirmar a remoção.
+Esse padrão deixa o código mais limpo, modular e fácil de manter.
 
-📖 Objetivo Educacional
+---
 
-Este projeto foi desenvolvido para estudos de:
+## 📝 Melhorias Futuras (Sugestões)
 
-Python sem programação orientada a objetos
+* Criar interface gráfica com **Tkinter** ou **Flet**
+* Exportar contatos para **CSV**
+* Criar testes automatizados com **pytest**
+* Transformar o projeto em API usando **Flask** ou **FastAPI**
+* Desenvolver uma versão em POO para fins comparativos
 
-Conceitos de CRUD
+---
 
-Arquitetura MVC simples
+## 🎓 Público-alvo
 
-Manipulação de bancos SQLite
+Este projeto é indicado para:
 
-Boas práticas de organização de código
+* Iniciantes em Python
+* Quem deseja aprender CRUD com SQLite
+* Pessoas estudando MVC sem POO
+* Projetos acadêmicos e portfólio
+* Quem quer entender lógica de programação aplicada
 
-É uma excelente base para evoluir para projetos maiores.
+---
+
+## 🤝 Contribuições
+
+Contribuições são muito bem-vindas!
+Sinta-se à vontade para abrir **Issues** ou enviar **Pull Requests**.
+
+---
+
+Se quiser, posso também:
+
+✅ Criar uma versão **em inglês**
+✅ Criar **badges** de tecnologia para deixar o README mais bonito
+✅ Gerar um **modelo de commit** para esse projeto
+✅ Criar uma **licença MIT**
+
+É só pedir!
