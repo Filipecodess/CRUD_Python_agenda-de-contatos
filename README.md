@@ -1,8 +1,8 @@
 ---
 
-# 📇 Agenda de Contatos — CRUD em Python + SQLite3 (Arquitetura MVC sem POO)
+# 📇 Agenda de Contatos — CRUD em Python + SQLite3 
 
-Este projeto é uma **Agenda de Contatos** desenvolvida em **Python 3**, utilizando **SQLite3**, e organizada no padrão arquitetural **MVC (Model–View–Controller)**, **sem as técnicas e conceitos mais fundamentais de Programação Orientada a Objetos**, seguindo um estilo de código baseado exclusivamente em funções.
+Este projeto é uma **Agenda de Contatos** desenvolvida em **Python 3**, utilizando **SQLite3**, e organizada no padrão arquitetural **MVC (Model–View–Controller)**, **sem as técnicas e conceitos mais fundamentais de Programação Orientada a Objetos** ainda estou estudando os conceitos. Então, estamos seguindo um estilo de código baseado exclusivamente em funções.
 É um projeto simples e direto do curso de coding da faculdade Senac do Recife
 
 ---
